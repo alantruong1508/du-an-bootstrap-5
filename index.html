@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nhúng bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-light">
+    <!-- làm phần navbar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom small fixed-top">
+      <div class="container">
+        <!-- navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo-tuhoc-light.png" alt="logo tuhoc.cc" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- menu item -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- nút đăng kí và đăng nhập -->
+          <div class="me-1 mb-2 mb-lg-0 d-flex flex-column gap-1 flex-md-row">
+            <a
+              href="#!"
+              class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center text-nowrap"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                class="me-2"
+                viewBox="0 0 640 640"
+              >
+                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M136 192C136 125.7 189.7 72 256 72C322.3 72 376 125.7 376 192C376 258.3 322.3 312 256 312C189.7 312 136 258.3 136 192zM48 546.3C48 447.8 127.8 368 226.3 368L285.7 368C384.2 368 464 447.8 464 546.3C464 562.7 450.7 576 434.3 576L77.7 576C61.3 576 48 562.7 48 546.3zM544 160C557.3 160 568 170.7 568 184L568 232L616 232C629.3 232 640 242.7 640 256C640 269.3 629.3 280 616 280L568 280L568 328C568 341.3 557.3 352 544 352C530.7 352 520 341.3 520 328L520 280L472 280C458.7 280 448 269.3 448 256C448 242.7 458.7 232 472 232L520 232L520 184C520 170.7 530.7 160 544 160z"
+                />
+              </svg>
+              Sign-up for Free
+            </a>
+            <a
+              href="#!"
+              class="btn btn-warning btn-sm d-inline-flex justify-content-center align-items-center text-nowrap"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                class="me-2"
+                viewBox="0 0 640 640"
+              >
+                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  d="M416 160L480 160C497.7 160 512 174.3 512 192L512 448C512 465.7 497.7 480 480 480L416 480C398.3 480 384 494.3 384 512C384 529.7 398.3 544 416 544L480 544C533 544 576 501 576 448L576 192C576 139 533 96 480 96L416 96C398.3 96 384 110.3 384 128C384 145.7 398.3 160 416 160zM406.6 342.6C419.1 330.1 419.1 309.8 406.6 297.3L278.6 169.3C266.1 156.8 245.8 156.8 233.3 169.3C220.8 181.8 220.8 202.1 233.3 214.6L306.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L306.7 352L233.3 425.4C220.8 437.9 220.8 458.2 233.3 470.7C245.8 483.2 266.1 483.2 278.6 470.7L406.6 342.7z"
+                />
+              </svg>
+              Login
+            </a>
+          </div>
+
+          <!-- nút search -->
+          <form class="d-flex mt-2 mt-lg-0" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for.."
+              aria-label="Search"
+            />
+            <button class="btn border bg-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                viewBox="0 0 640 640"
+              >
+                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- làm phần header -->
+    <header class="main-header pb-5 border-bottom">
+      <div class="container">
+        <div class="row align-items-center gx-md-5">
+          <!-- khối bên trái -->
+          <div class="col-md-6">
+            <h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              alias nulla minus sunt similique
+            </h1>
+            <p class="fs-5 fw-light text-secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur, debitis mollitia laudantium tenetur, tempora
+              obcaecati provident voluptatum
+            </p>
+            <a
+              href="#!"
+              class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center text-nowrap mb-2 mb-md-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                height="16px"
+                class="me-2"
+                viewBox="0 0 640 640"
+              >
+                <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#ffffff"
+                  d="M136 192C136 125.7 189.7 72 256 72C322.3 72 376 125.7 376 192C376 258.3 322.3 312 256 312C189.7 312 136 258.3 136 192zM48 546.3C48 447.8 127.8 368 226.3 368L285.7 368C384.2 368 464 447.8 464 546.3C464 562.7 450.7 576 434.3 576L77.7 576C61.3 576 48 562.7 48 546.3zM544 160C557.3 160 568 170.7 568 184L568 232L616 232C629.3 232 640 242.7 640 256C640 269.3 629.3 280 616 280L568 280L568 328C568 341.3 557.3 352 544 352C530.7 352 520 341.3 520 328L520 280L472 280C458.7 280 448 269.3 448 256C448 242.7 458.7 232 472 232L520 232L520 184C520 170.7 530.7 160 544 160z"
+                />
+              </svg>
+              Sign-up to get started
+            </a>
+          </div>
+          <!-- khối bên phải -->
+          <div class="col-md-6">
+            <div>
+              <img
+                class="rounded w-100"
+                src="./img/main-header.jpg"
+                alt="Main-header"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- làm phần side feature -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- item 1 -->
+          <div class="col-md-4">
+            <div
+              class="feature-item bg-white border rounded p-3 d-flex align-items-center"
+            >
+              <div>
+                <img src="./img/clock.png" alt="clock" />
+              </div>
+              <div class="ms-2">
+                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                <p class="small text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere officiis modi similique nihil
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="col-md-4">
+            <div
+              class="feature-item bg-white border rounded p-3 d-flex align-items-center mt-2 mt-md-0"
+            >
+              <div>
+                <img src="./img/responsive.png" alt="clock" />
+              </div>
+              <div class="ms-2">
+                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                <p class="small text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere officiis modi similique nihil
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="col-md-4">
+            <div
+              class="feature-item bg-white border rounded p-3 d-flex align-items-center mt-2 mt-md-0"
+            >
+              <div>
+                <img src="./img/tick.png" alt="clock" />
+              </div>
+              <div class="ms-2">
+                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                <p class="small text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere officiis modi similique nihil
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- làm phần course -->
+    <section class="py-4 border-bottom">
+      <div class="container">
+        <!-- row top -->
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="text-md-center">
+              <h4 class="fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                dolorem voluptatum. Temporibus amet mollitia
+              </h4>
+              <p class="small text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident commodi quas adipisci quod? Similique, eligendi illum?
+                Eum modi rem dolorem minus nisi dolore ullam!
+              </p>
+              <a
+                href="#!"
+                class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center text-nowrap mb-2 mb-md-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16px"
+                  height="16px"
+                  class="me-2"
+                  viewBox="0 0 640 640"
+                >
+                  <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    fill="#ffffff"
+                    d="M136 192C136 125.7 189.7 72 256 72C322.3 72 376 125.7 376 192C376 258.3 322.3 312 256 312C189.7 312 136 258.3 136 192zM48 546.3C48 447.8 127.8 368 226.3 368L285.7 368C384.2 368 464 447.8 464 546.3C464 562.7 450.7 576 434.3 576L77.7 576C61.3 576 48 562.7 48 546.3zM544 160C557.3 160 568 170.7 568 184L568 232L616 232C629.3 232 640 242.7 640 256C640 269.3 629.3 280 616 280L568 280L568 328C568 341.3 557.3 352 544 352C530.7 352 520 341.3 520 328L520 280L472 280C458.7 280 448 269.3 448 256C448 242.7 458.7 232 472 232L520 232L520 184C520 170.7 530.7 160 544 160z"
+                  />
+                </svg>
+                View all courses
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row course -->
+        <div class="row mt-4">
+          <!-- khối bên trái -->
+          <div class="col-md-3">
+            <div class="list-group mb-3 small">
+              <div class="list-group-item text-bg-light fw-bold">
+                Course Categories
+              </div>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Premium Courses
+                <span class="badge rounded-pill text-bg-warning">14</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Free Courses
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
+            </div>
+            <div class="list-group small">
+              <div class="list-group-item text-bg-light fw-bold">
+                Course by Topics
+              </div>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Coding
+                <span class="badge rounded-pill text-bg-warning">14</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Programing
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Design
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
+            </div>
+          </div>
+          <!-- khối bên phải -->
+          <div class="col-md-9">
+            <div class="list-group small mt-3 mt-md-0">
+              <div
+                class="list-group-item d-flex justify-content-between text-bg-light fw-bold"
+              >
+                List of all courses
+                <span class="badge rounded-pill text-bg-warning">
+                  24 Courses Available</span
+                >
+              </div>
+              <!-- item 1 -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div>
+                      <img
+                        src="./img/main-header.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur esse aperiam iusto ut voluptatem fuga,
+                      voluptates distinctio laboriosam error
+                    </p>
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="px-2 py-2 me-2 rounded-pill text-bg-warning d-inline-flex align-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        Rating: 4.7</span
+                      >
+                      <span class="px-2 py-2 rounded-pill text-bg-success"
+                        >Price: Rs,499/-</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item 2 -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div>
+                      <img
+                        src="./img/pic1.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur esse aperiam iusto ut voluptatem fuga,
+                      voluptates distinctio laboriosam error
+                    </p>
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="px-2 py-2 me-2 rounded-pill text-bg-warning d-inline-flex align-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        Rating: 4.7</span
+                      >
+                      <span class="px-2 py-2 rounded-pill text-bg-success"
+                        >Price: Rs,499/-</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item 3 -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div>
+                      <img
+                        src="./img/pic2.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur esse aperiam iusto ut voluptatem fuga,
+                      voluptates distinctio laboriosam error
+                    </p>
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="px-2 py-2 me-2 rounded-pill text-bg-warning d-inline-flex align-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        Rating: 4.7</span
+                      >
+                      <span class="px-2 py-2 rounded-pill text-bg-success"
+                        >Price: Rs,499/-</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item 4 -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div>
+                      <img
+                        src="./img/pic2.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur esse aperiam iusto ut voluptatem fuga,
+                      voluptates distinctio laboriosam error
+                    </p>
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="px-2 py-2 me-2 rounded-pill text-bg-warning d-inline-flex align-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        Rating: 4.7</span
+                      >
+                      <span class="px-2 py-2 rounded-pill text-bg-success"
+                        >Price: Rs,499/-</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item 5 -->
+              <a
+                href="./single-course.html"
+                class="list-group-item list-group-item-action"
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div>
+                      <img
+                        src="./img/pic3.jpg"
+                        alt=""
+                        class="rounded img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h5>
+                    <p class="text-secondary">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Consequuntur esse aperiam iusto ut voluptatem fuga,
+                      voluptates distinctio laboriosam error
+                    </p>
+                    <div class="d-inline-flex align-items-center">
+                      <span
+                        class="px-2 py-2 me-2 rounded-pill text-bg-warning d-inline-flex align-items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill me-2"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+                        Rating: 4.7</span
+                      >
+                      <span class="px-2 py-2 rounded-pill text-bg-success"
+                        >Price: Rs,499/-</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- làm phần other content -->
+    <section class="other-content py-4 border-bottom">
+      <div class="container">
+        <div class="row align-items-center gx-md-5">
+          <!-- khối bên trái -->
+          <div class="col-md-6">
+            <h2 class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+              aliquam et impedit iure vitae tenetur adipisci placeat a
+              laudantium fugiat
+            </h2>
+            <p class="small text-secondary">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              atque quo enim deleniti doloribus distinctio facilis culpa non
+              inventore neque tenetur aliquam dolore, quis, ex modi repellat
+              magnam et eius!
+            </p>
+            <h2 class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h2>
+            <p class="small text-secondary">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+              atque quo enim deleniti doloribus distinctio facilis culpa non
+              inventore neque tenetur aliquam dolore, quis, ex modi repellat
+              magnam et eius!
+            </p>
+            <a
+              href="#!"
+              class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center text-nowrap mb-2 mb-md-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="me-2 bi bi-info-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                ></path>
+              </svg>
+              Sign-up to get more infor
+            </a>
+          </div>
+          <!-- khối bên phải -->
+          <div class="col-md-6">
+            <div>
+              <img
+                class="rounded w-100"
+                src="./img/main-header.jpg"
+                alt="Main-header"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- làm phần subscribe -->
+    <section class="subscribe py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="text-center mb-3 md-md-0">
+              <h5 class="text-white text-md-end fs-4 fw-light">
+                Subscribe for newsletters
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <form class="d-flex mt-2 mt-lg-0" role="search">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Your email"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn bg-success d-inline-flex align-items-center text-white"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="white"
+                    class="me-2 bi bi-envelope-check-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
+                    ></path>
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                    ></path>
+                  </svg>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- làm phần footer -->
+    <footer class="main-footer text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="brand-icon">
+              <img src="./img/logo-tuhoc-dark.png" alt="Tuhoc.cc" />
+            </div>
+            <address class="small text-secondary mt-2">
+              Jayanagar, Bangalore, <br />Karnataka, India. <br />560011
+            </address>
+            <p class="small text-secondary">contact@tuhoc.cc</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Main menu</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Misc</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-secondary small" href=""
+                  >Link item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h6>Follow us</h6>
+            <div>
+              <a
+                href="#!"
+                class="btn btn-primary rounded-pill d-inline-flex align-items-center btn-sm px-md-3 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+                <span class="d-md-block d-none">Facebook</span>
+              </a>
+              <a
+                href="#!"
+                class="btn btn-info rounded-pill d-inline-flex align-items-center btn-sm px-md-3 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+                <span class="d-md-block d-none">Twitter</span>
+              </a>
+              <a
+                href="#!"
+                class="btn btn-danger rounded-pill d-inline-flex align-items-center btn-sm px-md-3 mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  ></path>
+                </svg>
+                <span class="d-md-block d-none">YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- làm phần copyright -->
+    <div class="footer copy-right py-4">
+      <div class="container">
+        <div class="row text-center text-white small">
+          <p class="m-0 small">Copyright © 2030. Gà Lại Lập Trình</p>
+        </div>
+      </div>
+    </div>
+    <!-- làm phần mobile padding -->
+    <div class="pt-5 pb-4 d-md-none" style="background-color: black"></div>
+    <!-- làm phần fixed footer -->
+    <div
+      class="d-block d-md-none d-flex justify-content-center p-3 fixed-bottom blur-filter"
+    >
+      <a
+        href="#!"
+        class="btn btn-warning btn-sm fw-bold rounded-pill px-3 d-inline-block align-items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-person-check-fill me-2"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+          ></path>
+          <path
+            d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          ></path>
+        </svg>
+        Sign-up for free
+      </a>
+    </div>
+    <!-- Nhúng JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
